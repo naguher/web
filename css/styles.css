@@ -78,7 +78,7 @@ a.anchor {
 .menu li {
     font-size: 20px;
     display: inline;
-    padding-right: 40px;
+    padding-left: 40px;
 }
 
 .menu li a {
@@ -94,16 +94,10 @@ a.anchor {
 	color:#666666;
 }
 
-.name {
-    margin: 300px 0;
-}
-
 h1.name {
-    font-size: 70px;
-    text-align: center;
-    display: inline-block;
+    font-size: 30px;
+    text-align: left;
     padding: auto 0;
-    border-bottom: 6px solid #44E8E8;
 }
 
 .study {
