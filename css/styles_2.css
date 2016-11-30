@@ -312,7 +312,7 @@ figcaption span {
 
 #about {
     width: 1024px;
-    margin: 0 auto;
+    margin: 200px auto;
    /* border: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 
@@ -349,13 +349,16 @@ figcaption span {
   /* border: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 
-#contact p{
+#contact p {
     text-align: center;
-    font-size: 20px;
-    padding-top: 20px;
-    line-height: 1.5;  
+    line-height: 2;  
 }
 
+.information h4 {
+    padding-top: 40px;
+    font-size: 30px;
+    text-align: center;    
+}
 
 /* ------------------------------------ */
 /*				FOOTER      			*/
