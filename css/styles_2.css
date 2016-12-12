@@ -234,7 +234,7 @@ h2 {
 #container {
   width: 1024px;
   overflow: hidden; /* para que todo lo que contenga todo lo que est´ña dentro de esta caja */
-  margin: 200px auto;
+  margin: 125px auto;
   /* border: 1px solid rgba(0, 0, 0, 0.1);*/
 }
 
