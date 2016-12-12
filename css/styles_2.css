@@ -352,8 +352,14 @@ ul.social {
 
 .social li {
     float: right;
-    font-size: 3em;
     color: black;
+    padding-left: 40px;
+    display: inline-block;
+}
+
+.social li:hover {
+    float: right;
+    color: #44E8E8;
     padding-left: 40px;
     display: inline-block;
 }
