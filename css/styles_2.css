@@ -98,7 +98,7 @@ h1 {
 
 #works {
   width: 1024px;
-  margin: 150px auto;
+  margin: 50px auto;
   text-align: center;
   /* border: 1px solid rgba(0, 0, 0, 0.1);*/
 }
@@ -135,7 +135,7 @@ h2 {
 }
 
 .contenedor .figcaption {
-  display: none;
+  display: none; /* PARA QUE APAREZCA OCULTO */
   color: white;
 	margin: auto 0;
   padding: 46px 10px;
@@ -161,7 +161,7 @@ h2 {
 	-o-transition: all 0.2s ease-in;
 }
 
-/* BOTÓN */
+/* BOTÓN WORK */
 
 .buttom a{
     font-size: 20px;
@@ -224,10 +224,42 @@ h2 {
  } */
 
 
+/* ------------------------------------ */
+/*				PORTFOLIO      			*/
+/* ------------------------------------ */
+
+#container {
+  width: 1024px;
+  overflow: hidden; /* para que todo lo que contenga todo lo que est´ña dentro de esta caja */
+  margin: 200px auto;
+  /* border: 1px solid rgba(0, 0, 0, 0.1);*/
+}
+
+.text_2 {
+    width: 35%;
+    float: left;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.row {
+    width: 60%;
+    float: right;
+}
+
+.row li {
+    display: inline;
+}
+
+.row img {
+    width: 100%;
+}
+
+
 
 /* ------------------------------------ */
-/*			         	ABOUT ME     			   */
-/* ------------------------------------ */
+/*			ABOUT ME     			   */
+/* ----------------------------------- */
 
 
 #about {
@@ -244,11 +276,13 @@ h2 {
 
 .me {
     width: 1024px;
-    margin-bottom: 200px;
+    margin-bottom: 150px;
 
 }
 
-
+.photo img {
+    width: 100%;
+}
 
 .photo {
     width: 45%;
@@ -315,7 +349,8 @@ ul.social {
 
 .social li {
     float: right;
-    width: 15%;
+    font-size: 3em;
+    color: black;
     padding-left: 40px;
     display: inline-block;
 }
