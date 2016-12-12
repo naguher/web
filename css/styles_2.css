@@ -59,12 +59,15 @@ a.anchor {
 
 
 #header {
+    background: white;
     width: 1024px;
+    position: fixed;
+    top: 0;
+    right: 10%;
+    left: 10%;
+    z-index: 1;
     height: 80px;
     margin: 0 auto;
-    background-color: white;
-    z-index: 1;
-   /* border: 1px solid rgba(0, 0, 0, 0.1); */
 }
 
 .name {
@@ -98,7 +101,7 @@ h1 {
 
 #works {
   width: 1024px;
-  margin: 50px auto;
+  margin: 150px auto;
   text-align: center;
   /* border: 1px solid rgba(0, 0, 0, 0.1);*/
 }
