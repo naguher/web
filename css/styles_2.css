@@ -162,6 +162,72 @@ a.anchor {
         display: none;
     }
 }
+
+/* Clearfix */
+.clear:before, .clear:after {
+    content: " ";
+    display: table;
+}
+
+.clear:after {
+    clear: both;
+}
+
+.clear {
+    *zoom: 1;
+}
+
+.menu a#pull {
+    display: none;
+}
+
+/* Responsive */
+
+@media only screen and (max-width : 500px) {
+    .nav {
+        border-bottom: 0;
+        height: auto;
+    }
+
+    .menu ul {
+        display: none;
+        height: auto;
+        width: 100%;
+    }
+
+    .menu li {
+        width: 50%;
+        float: left;
+        position: relative;
+    }
+
+    .menu a {
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+    }
+
+    .menu a#pull {
+        display: block;
+        background-color: #666;
+        width: 100%;
+        position: relative;
+    }
+
+    .menu a#pull:after {
+        content:"";
+        background: url('images/icons/line-menu.png') no-repeat;
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 15px;
+        top: 10px;
+    }
+}
+
+
+
 /* ------------------------------------ */
 /*		          	WORK		          		*/
 /* ------------------------------------ */
