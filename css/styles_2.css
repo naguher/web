@@ -1,6 +1,8 @@
 /* ------------------------------------ */
-/*				HEADER  				*/
+/*				GENERAL				    */
 /* ------------------------------------ */
+
+
 html, body, p {
   width: 100%;
   margin: 0;
@@ -37,8 +39,9 @@ a.anchor {
 }
 
 
-/* HEADER */
-
+/* ------------------------------------ */
+/*				HEADER  				*/
+/* ------------------------------------ */
 
 	#header{
       background: white;
@@ -49,7 +52,7 @@ a.anchor {
       z-index: 1;
       height: 80px;
     }
-
+    
     .name {
         width: 25%;
         float: left;
@@ -63,174 +66,67 @@ a.anchor {
 
     .menu {
         /*display: none;*/
-        float: right;
-        overflow: hidden;
+        width: 50%;
+        float: right; 
+       /* overflow: hidden;*/
     }
-
-    .menu li {
-        display: inline-block;
-        padding-left: 50px;
-    }
-
-
-    ul.spoiler {
-        display: inline-block;
-        float: right;
-     }
-
-    .spoiler li {
-        display: inline-block;
-        padding-top: 10px;
-        padding-left: 50px;
-     }
-
-    .icon {
-       display: none;
-       margin-top: 10px;
-       float: right;
-       width: 50%;
-    }
-
+    
     .menu a:hover {
         color: #44E8E8;
     }
-
-    .contents {
-      padding:0 1em;
-      max-width: 650px;
-      margin: 100px auto;
-    }
-
-
-   /* Ocultar botón radio */
-
-    input[id^="spoiler"]{
-            display: none;
-        }
-
-    /* Estilo botón clicable */
-
-     input[id^="spoiler"] + label {
-
-        float: right;
-        margin: 0 auto;
-        padding: 5px 20px;
-        color: #666;
-        text-align: center;
-        font-size: 24px;
-        border-radius: 8px;
-        cursor: pointer;
-        transition: all .6s;
-    }
-
-     /* Estilo botón cuando su INPUT está seleccionado */
-
-        input[id^="spoiler"]:checked + label {
-          color: #333;
-        }
-
-     /* Estilo caja SPOILER (inicialmente oculto) */
-
-        input[id^="spoiler"] ~ .spoiler {
-             width: 100%;
-            float: right;
-            height: 0;
-            /* overflow: hidden; */
-            opacity: 0;
-            margin: 10px auto 0;
-            padding: 10px;
-            background: #eee;
-            border: 1px solid #ccc;
-            border-radius: 8px;
-            transition: all .6s;
-        }
-
-    /* Estilo caja SPOILER cuando su INPUT está seleccionado */
-
-          input[id^="spoiler"]:checked + label + .spoiler{
-          height: auto;
-          opacity: 1;
-          padding: 10px;
-        }
-
-
- @media only screen and (max-width:800px){
-   .icon {
-     display: inline-block;
-    }
-
-   .menu {
-        display: none;
-    }
-}
-
-/* Clearfix */
-.clear:before, .clear:after {
-    content: " ";
-    display: table;
-}
-
-.clear:after {
-    clear: both;
-}
-
-.clear {
-    *zoom: 1;
-}
-
-.menu a#pull {
-    display: none;
-}
-
-/* Responsive */
-
-@media only screen and (max-width : 500px) {
-    .nav {
-        border-bottom: 0;
-        height: auto;
-    }
-
-    .menu ul {
-        display: none;
-        height: auto;
-        width: 100%;
+    
+    ul.nav {
+        float:right;
     }
 
     .menu li {
-        width: 50%;
-        float: left;
-        position: relative;
-    }
-
-    .menu a {
-        text-align: left;
-        width: 100%;
-        text-indent: 25px;
-    }
-
-    .menu a#pull {
-        display: block;
-        background-color: #666;
-        width: 100%;
-        position: relative;
-    }
-
-    .menu a#pull:after {
-        content:"";
-        background: url('images/icons/line-menu.png') no-repeat;
-        width: 30px;
-        height: 30px;
         display: inline-block;
-        position: absolute;
-        right: 15px;
-        top: 10px;
+        padding-left: 50px;
+    }
+
+    .icon {
+        display: none;
+        float: right;
+        font-size: 50px;
+    }
+
+
+
+@media only screen and (max-width:800px){
+     
+    .icon {
+        display: inline;
+    }
+   
+    .menu {
+        width: 70%;
+        float: right; 
+       /* overflow: hidden;*/
+    }
+     .nav a {
+        /*display: none;*/
+        float: right; 
+       /* overflow: hidden;*/
+    }
+    .menu li {
+        display: block;
+        padding: 30px;
+    }
+    
+      ul.nav {
+        float:right;
+        width: 100%;
+        background-color: azure;
+    }
+    
+     ul.nav {
+        display: none;
     }
 }
 
 
-
 /* ------------------------------------ */
-/*		          	WORK		          		*/
+/*		          	WORK		        */
 /* ------------------------------------ */
 
 
@@ -256,7 +152,7 @@ h2 {
 
 .contenedor li {
     display: inline-block;
-    width: 300px;
+    width: 400px;
     margin: 19px;
 }
 
@@ -373,52 +269,45 @@ h2 {
 
 }
 
+@media screen and (max-width: 1500px) {
+
+    .contenedor li {
+    width: 350px;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+
+    .contenedor li {
+    width: 300px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+
+    .contenedor li {
+    width: 300px;
+    }
+}
+
 @media screen and (max-width: 900px) {
 
-    .contenedor li {
-    width: 250px;
+    #works {
+    width: 75%;
+    margin: 100px auto;
+    text-align: center;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
     }
-}
-
-@media screen and (max-width: 700px) {
-
-    .contenedor li {
-    width: 200px;
-    }
-}
-
-/* ------------------------------------ */
-/*				PORTFOLIO      			*/
-/* ------------------------------------ */
-
-#container {
-  width: 1024px;
-  overflow: hidden; /* para que todo lo que contenga todo lo que est´ña dentro de esta caja */
-  margin: 125px auto;
-  /* border: 1px solid rgba(0, 0, 0, 0.1);*/
-}
-
-.text_2 {
-    width: 35%;
-    float: left;
-    text-align: justify;
-    padding-top: 10px;
-}
-
-.row {
-    width: 60%;
-    float: right;
-}
-
-.row li {
-    display: inline;
-}
-
-.row img {
+    
+    ul.contenedor {
     width: 100%;
+    }
+    
+    .contenedor li {
+    width: 90%;
+    margin: 10px;
+    }
 }
-
-
 
 /* ------------------------------------ */
 /*			ABOUT ME     			   */
@@ -465,7 +354,12 @@ h2 {
 /*  Opcion para ser responsive */
 
 
+
 @media screen and (max-width: 700px) {
+    
+    .me {
+        margin-bottom: 50px;
+    }
 	.photo,
     .text {
 		width: 100%;
@@ -474,6 +368,13 @@ h2 {
 }
 
 @media screen and (max-width: 900px) {
+    
+    #about {
+    width: 75%;
+    margin: 50px auto;
+    /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    }
+    
     h1, h4, p {
         font-size: 14px;
     }
@@ -504,6 +405,19 @@ h2 {
     text-align: center;
 }
 
+@media screen and (max-width: 900px) {
+    
+    #contact {
+        width: 75%;
+        margin: 100px auto;
+        /* border: 1px solid rgba(0, 0, 0, 0.1); */
+    }
+    
+    .information h4 {
+    padding-top: 50px;
+    }
+}
+
 /* ------------------------------------ */
 /*				FOOTER      			*/
 /* ------------------------------------ */
@@ -518,14 +432,15 @@ h2 {
 }
 
 .copy {
-    width: 40%;
-    display: inline-block;
+    width: 50%;
+    float: left;
+    margin-left: 100px;
     text-align: left;
 }
 
 .redes {
-    display: inline;
-    width: 40%;
+    float: right;
+    margin-right: 100px;
 }
 
 ul.social {
@@ -533,17 +448,14 @@ ul.social {
 }
 
 .social li {
-    float: right;
     color: black;
-    padding-left: 15px;
+    padding-left: 30px;
     display: inline-block;
+    overflow: hidden;
 }
 
 .social li:hover {
-    float: right;
     color: #44E8E8;
-    padding-left: 40px;
-    display: inline-block;
 }
 
 .social img {
@@ -557,16 +469,80 @@ ul.social {
 }
 
 
-    @media screen and (max-width: 700px) {
+@media screen and (max-width: 700px) {
 
-    /*ul.social {
-      width: 45%;
-    }*/
+    #footer{
+     height: 50px;    
+    } 
+    
+    .redes {
+     margin-right: 10px;
+    }
+        
+    .social li {
+        padding-left: 18px;
+    }
+        
+    .fa-2x {
+     font-size: 1.5em;
+    }
 
     .copy p {
       font-size: 10px;
     }
 
     .copy {
+      width: 40%;
       margin-left: 5%;
+    }
+}
+        
+
+/* ------------------------------------ */
+/*				PORTFOLIO      			*/
+/* ------------------------------------ */
+        
+
+#portfolio {
+  width: 75%;
+  overflow: hidden; /* para que todo lo que contenga todo lo que est´ña dentro de esta caja */
+  margin: 125px auto;
+  /* border: 1px solid rgba(0, 0, 0, 0.1);*/
+}
+
+.description {
+  width: 100%;
+  display: inline-block;
+}
+
+.text_2 {
+    width: 35%;
+    float: left;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+.row {
+    width: 60%;
+    float: right;
+}
+
+.row li {
+    display: inline;
+}
+
+.row img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+
+/*  Opcion para ser responsive */
+
+@media screen and (max-width: 700px) {
+	.row,
+    .text_2 {
+		width: 100%;
+        float: none;
+	}
 }
