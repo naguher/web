@@ -9,7 +9,23 @@
   <link rel="stylesheet" href="css/styles_2.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-  <script src="https://use.fontawesome.com/fbf3926e29.js"></script>
+    
+  <script type="text/javascript">
+      
+    function mostrarmenu(id) {
+
+      if( menu.getElementById("nav").style.display == "none") {
+        menu.getElementById("nav").style.display = "block";
+      }
+      else {
+        menu.getElementById("nav").style.display = "block";
+      }
+
+    }
+      
+  </script>
+    
+    
 </head>
 
 <body>
@@ -23,7 +39,7 @@
 
     <div class="menu">  
         
-        <div class="icon">☰</div>
+        <div class="icon" onclick="mostrarmenu">☰</div>
         
          <ul class="nav">
 
