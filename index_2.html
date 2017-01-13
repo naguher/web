@@ -9,23 +9,10 @@
   <link rel="stylesheet" href="css/styles_2.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
-    
-  <script type="text/javascript">
-      
-    function mostrarmenu(id) {
+  <script src="https://use.fontawesome.com/fbf3926e29.js"></script>
 
-      if( menu.getElementById("nav").style.display == "none") {
-        menu.getElementById("nav").style.display = "block";
-      }
-      else {
-        menu.getElementById("nav").style.display = "block";
-      }
 
-    }
-      
-  </script>
-    
-    
+
 </head>
 
 <body>
@@ -33,25 +20,23 @@
 
   <div id="header">
 
-    <div class="name">      
-      <h1>NATALIA GUAITA</h1>       
+    <div class="name">
+      <h1>NATALIA GUAITA</h1>
     </div>
 
-    <div class="menu">  
-        
-        <div class="icon" onclick="mostrarmenu">☰</div>
-        
-         <ul class="nav">
+    <div class="menu">
 
+        <div class="icon" onclick="javascript:mostrarmenu()">☰</div>
+
+         <ul id="nav" class="nav">
             <li><a href="#" title="Home">Home</a></li>
             <li><a href="#WORKS" title="Work">Works</a></li>
             <li><a href="#ABOUT_ME" title="About_me">About</a></li>
             <li><a href="#CONTACT" title="Contact">Contact</a></li>
-
          </ul>
-      
+
     </div>
-    
+
 </div>
 
   <div id="works">
@@ -227,6 +212,7 @@
     <a class="anchor" name="ABOUT_ME"></a>
 
     <div class="me">
+
       <h2>ABOUT ME</h2>
 
       <!-- PARA ANCLAR DOS PUNTOS DE LA MISMA PÁGINA SE PONE ESTO DONDE QUIERES QUE TE LLEVE CUANDO LE DAS AL BOTÓN <a name=""> <a href="#"> El signo # hace que haga referencia a la misma página y el texto posterior entre "" apunta al identificador <a> -->
@@ -237,8 +223,8 @@
       <img src="images/me.jpg" />
     </div>
 
-    <div class="text">
-      <p>
+      <div class="text">
+        <p>
         Mi nombre es Natalia Guaita, soy licenciada en Bellas artes auqnue también soy Técnico Audiovisual. Durante años sólo me he movido en el sector audiovisual, pero mi pasión por el arte y el diseño me empujó a estudiar Bellas artes y a pesar de haber profundizado más en el campo de la restauración de objetos de artes, el diseño siempre me ha llamado la atención y he querido continuar formandome en este sector, ya sea con distintos cursos y haciendo trabajos de diseño.</p>
 
       </div>
@@ -284,5 +270,26 @@
     </div>
 
   </body>
+
+  <script type="text/javascript">
+
+    function mostrarmenu() {
+      var style = document.getElementById("nav").style;
+      if( style.display === "none" || style.display === "") {
+        style.display = "block";
+      }
+      else {
+        style.display = "none";
+      }
+
+    }
+
+    document.body.onload = function() {
+      document.getElementById("nav").onclick = function() {
+        mostrarmenu();
+      }
+    }
+
+  </script>
 
   </html>
