@@ -34,7 +34,7 @@ p {
 a.anchor {
   display: block;
   position: relative;
-  top: -80px;
+  top: -150px;
   visibility: hidden;
 }
 
@@ -50,7 +50,7 @@ a.anchor {
       right: 0;
       left: 0;
       z-index: 1;
-      height: 50px;
+      height: 75px;
       box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
     }
     .header_content {
@@ -59,14 +59,13 @@ a.anchor {
     }
 
     .name {
-        width: 25%;
+        width: 30%;
         float: left;
-        margin-left: 10px;
     }
 
     h1 {
         text-align: left;
-        font-size: 20px;
+        font-size: 30px;
     }
 
     .menu {
@@ -76,6 +75,11 @@ a.anchor {
 
     ul.nav {
         float:right;
+        padding: 10px 0;
+    }
+
+    .nav a {
+        font-size: 20px;
     }
 
     .menu li {
@@ -101,28 +105,27 @@ a.anchor {
       float: right;
     }
 
-    .nav a {
-        /*display: none;*/
-        float: right;
-        /* overflow: hidden;*/
+    .menu_mobile ul.nav {
+        display: none;
+        width: 65%;
+        top: 34px;
+        position: absolute;
+        height: 10000%;
+        background-color: #44E8E8;
     }
+
     .menu_mobile li {
         display: block;
         padding: 30px;
     }
 
-    .menu_mobile ul.nav {
-        float:right;
-        width: 100%;
-        background-color: azure;
-    }
-
-    .menu_mobile ul.nav {
-        display: none;
-    }
 
 @media only screen and (max-width:800px){
 
+    #header {
+        height: 50px;
+    }
+    
     .icon {
       display: inline;
     }
@@ -236,12 +239,8 @@ h2 {
   bottom: 10px;
   background: #44E8E8;
   height: 3px;
-  -webkit-transition-property: left, right;
   transition-property: left, right;
-  -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
 }
 
 .underline:hover:before, .underline:focus:before, .underline:active:before {
@@ -310,6 +309,10 @@ h2 {
     .underline {
       padding: 0;
     }
+    
+    .underline:before {
+      position: inherit;
+    }
 
 }
 
@@ -338,6 +341,7 @@ h2 {
 
 .photo img {
     width: 100%;
+    margin-top: 100px;
 }
 
 .photo {
@@ -355,7 +359,7 @@ h2 {
 
 .text_3 {
     text-align: justify;
-    margin: 20px 0 30px 0;
+    margin-top: 100px;
 }
 
 /*  Opcion para ser responsive */
@@ -367,14 +371,20 @@ h2 {
     .me {
         margin-bottom: 50px;
     }
+    
 	.photo,
-  .text {
+    .text {
 		width: 100%;
         float: none;
 	}
-  .text_3 {
-      margin: 20px 0 30px 0;
-  }
+    
+    .photo img {
+    margin-top: 20px;
+    }
+    
+     .text_3 {
+      margin: 30px 0 30px 0;
+    }
 
 }
 
@@ -408,6 +418,7 @@ h2 {
 #contact p {
     text-align: center;
     line-height: 2;
+    margin-bottom: 100px;
 }
 
 .information h4 {
