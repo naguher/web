@@ -142,7 +142,7 @@ a.anchor {
 
 
 /* ------------------------------------ */
-/*		          	WORK		              */
+/*		          	WORK		        */
 /* ------------------------------------ */
 
 
@@ -187,9 +187,10 @@ h2 {
 .contenedor .figcaption {
   display: none; /* PARA QUE APAREZCA OCULTO */
   color: white;
+  width: 100%;
   margin: auto 0;
-  padding: 46px 10px;
-  height: 123px;
+  padding: 50px 0px;
+  height: 65%;
   z-index: 2;
   background-color: rgba(0, 0, 0, 0.5);
   position: absolute;
@@ -279,6 +280,11 @@ h2 {
     .contenedor li {
     width: 250px;
     }
+    
+    .contenedor .figcaption {
+    padding: 32px 0px;
+    height: 65%;
+    }
 }
 
 @media screen and (max-width: 700px) {
@@ -298,6 +304,15 @@ h2 {
     width: 90%;
     margin: 10px;
     }
+    
+    .contenedor li.mobile {
+       display: none;
+    }
+    
+    .contenedor figure:hover .figcaption {
+    display: none;
+    }
+
 
     .buttom {
         padding: 10px;
