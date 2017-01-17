@@ -3,13 +3,17 @@
 
 <head>
   <meta charset="utf-8">
-  <title>NG_GRAPHIC DESIGNER</title>
+  <title>Natalia Guaita</title>
   <meta name="Portfolio+CV" content="Portfolio trabajos y CV Natalia Guaita">
   <meta name="viewport" content="initial-scale=1.0, width=device-width">
   <link rel="stylesheet" href="css/styles_2.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/mifavicon.png" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <script src="https://use.fontawesome.com/fbf3926e29.js"></script>
+
+
+
 </head>
 
 <body>
@@ -17,25 +21,37 @@
 
   <div id="header">
 
-    <div class="name">      
-      <h1>NATALIA GUAITA</h1>       
+    <div class="header_content">
+
+        <div class="name">
+            <h1><a href="index_2.html">NATALIA GUAITA</a></h1>
+        </div>
+
+        <div class="menu">
+
+             <ul class="nav">
+                <li><a href="index_2.html" title="Home">Home</a></li>
+                <li><a href="#" title="Work">Works</a></li>
+                <li><a href="index_2.html#ABOUT_ME" title="About_me">About</a></li>
+                <li><a href="index_2.html#CONTACT" title="Contact">Contact</a></li>
+             </ul>
+        </div>
+
+        <div class="menu_mobile">
+
+            <div class="icon" onclick="javascript:mostrarmenu()">☰</div>
+
+             <ul id="nav" class="nav">
+                <li><a href="index_2.html" title="Home">Home</a></li>
+                <li><a href="#" title="Work">Works</a></li>
+                <li><a href="index_2.html#ABOUT_ME" title="About_me">About</a></li>
+                <li><a href="index_2.html#CONTACT" title="Contact">Contact</a></li>
+             </ul>
+
+        </div>
+
     </div>
 
-    <div class="menu">  
-        
-        <div class="icon">☰</div>
-        
-         <ul class="nav">
-
-            <li><a href="#" title="Home">Home</a></li>
-            <li><a href="#WORKS" title="Work">Works</a></li>
-            <li><a href="#ABOUT_ME" title="About_me">About</a></li>
-            <li><a href="#CONTACT" title="Contact">Contact</a></li>
-
-         </ul>
-      
-    </div>
-    
 </div>
 
 <div id="works">
@@ -44,109 +60,160 @@
 
     <h2>WORKS</h2>
 
-    <div class="selection">
+  <!--  <div class="selection">
       <p> BRANDING | DISEÑO EDITORIAL | DISEÑO WEB | DISEÑO GRÁFICO </p>
-    </div>
+    </div> -->
 
-        <ul class="contenedor caption">
+    <ul class="contenedor caption">
 
-				<li>
-					<figure>
-						<div><img src="images/alom_2.jpg" alt="music image"></div>
-						<figcaption>
-							<h3>PROYECTO ALOM</h3>
-							<span>.</span>
-							<a href="alom.html" class="btn_hover">Ver</a>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<div><img src="images/editorial/cubierta_libros.jpg" alt="portfolio images"></div>
-						<figcaption>
-							<h3>Diseño editorial</h3>
-							<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-							<a href="branding.html" class="btn_hover">Ver</a>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<div><img src="images/alom_2.jpg" alt="contact image"></div>
-						<figcaption>
-							<h3>Poyecto 3</h3>
-							<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-							<a href="carteles.html" class="btn_hover">Ver</a>
-						</figcaption>
-					</figure>
-				</li>
+      <li>
+        <figure>
+          <div>
+            <img class="web" src="images/web/diplomado.jpg" alt="diseño landing pages diplomado en gitybim">
+          </div>
+          <a class="figcaption" href="diseno_web.html">
+            <h3> Diseño Web </h3>
+            <span> Diseño Landing pages Dimplomado en GITyBIM </span>
+          </a>
+        </figure>
+      </li>
+        
+      <li>
+        <figure>
+          <div>
+            <img class="branding" src="images/branding/tarjeta_estudent.jpg" alt="diseño tarjetas de visita">
+          </div>
+          <a class="figcaption" href="branding.html">
+            <h3> Branding </h3>
+            <span>Diseño logo para clínica dental para estudiantes. </span>
+          </a>
+        </figure>
+      </li>
+        
+      <li>
+        <figure>
+          <div>
+            <img class="editorial" src="images/libros/cubierta_libros.jpg" alt="diseño cubierta cuentos">
+          </div>
+          <a class="figcaption" href="libros.html">
+            <h3>Diseño libros</h3>
+            <span> Diseño cubierta colección de libros. </span>
+          </a>
+        </figure>
+      </li>
+        
+        
+      <li>
+        <figure>
+          <div>
+            <img class="grafico" src="images/simo/poster_simo.jpg" alt="carteles feria SIMO">
+          </div>
+          <a class="figcaption" href="simo.html">
+            <h3>Feria SIMO</h3>
+            <span>Diseño de carteles y merchandising para feria de educación SIMO. </span>
+          </a>
+        </figure>
+      </li>
+        
+        
+      <li>
+        <figure>
+          <div>
+            <img class="editorial" src="images/alom/libro_alom.jpg" alt="diseño cubierta libro curso para adultos">
+          </div>
+          <a class="figcaption" href="alom.html">
+            <h3> Proyecto ALOM </h3>
+            <span> Diseño editorial y web para curso de adultos </span>
+          </a>
+        </figure>
+      </li>
+
+      <li>
+        <figure>
+          <div>
+            <img class="grafico" src="images/copade/cartel_copade.jpg" alt="diseño cartel de café para ONG de comercio justo">
+          </div>
+          <a class="figcaption" href="copade.html">
+            <h3> COPADE </h3>
+            <span> Diseño de carteles para ONG de comercio justo "COPADE".</span>
+          </a>
+        </figure>
+      </li>
+
+      <li>
+        <figure>
+          <div>
+            <img class="grafico" src="images/aula/roll_up.jpg" alt="diseño material gráfico para stands de feria Aula Educación">
+          </div>
+          <a class="figcaption" href="aula.html">
+            <h3>Feria AULA</h3>
+            <span>Diseño de carteles y merchandising para feria de educación AULA. </span>
+          </a>
+        </figure>
+      </li>
+        
+      <li>
+        <figure>
+          <div>
+            <img class="editorial" src="images/editorial/revista_abierta.jpg" alt="maquetación articulo revista psicología">
+          </div>
+          <a class="figcaption" href="diseno_editorial.html">
+            <h3>Diseño Editorial</h3>
+            <span> Diseño maquetación articulo para revista de psicología. </span>
+          </a>
+        </figure>
+      </li>
+
+      <li>
+        <figure>
+          <div>
+            <img class="grafico" src="images/epale/bag.jpg" alt="Diseño bolsa para el proyecto EPALE">
+          </div>
+          <a class="figcaption" href="epale.html">
+            <h3>Proyecto EPALE</h3>
+            <span> Diseño de flyers y material merchandising para el proyecto EPALE </span>
+          </a>
+        </figure>
+      </li>
 
 
-				<li>
-					<figure>
-						<div><img src="images/alom_2.jpg" alt="contact image"></div>
-						<figcaption>
-							<h3>Poyecto 4</h3>
-							<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-							<a href="diseno_web.html" class="btn_hover">Ver</a>
-						</figcaption>
-					</figure>
-				</li>
+      <li>
+        <figure>
+          <div>
+            <img class="grafico" src="images/aula_mentor/tripticos.jpg" alt="diseño tripticos información cursos Aula Mentor">
+          </div>
+          <a class="figcaption" href="aula_mentor.html">
+            <h3>Aula Mentor</h3>
+            <span>Diseño trípticos de información de cursos Aula Mentor. </span>
+          </a>
+        </figure>
+      </li>
 
-				<li>
-					<figure>
-						<div><img src="images/alom_2.jpg" alt="music image"></div>
-						<figcaption>
-							<h3>Poyecto 5</h3>
-							<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-							<a href="alom.html" class="btn_hover">Ver</a>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<div><img src="images/alom_2.jpg" alt="portfolio images"></div>
-						<figcaption>
-							<h3>Poyecto 6</h3>
-							<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-							<a href="aula.html" class="btn_hover">Ver</a>
-						</figcaption>
-					</figure>
-				</li>
+      <li>
+        <figure>
+          <div>
+            <img class="web" src="images/web/value_2.jpg" alt="diseño landing pages del máster en Value Investing en distintos formatos">
+          </div>
+          <a class="figcaption" href="diseno_web.html">
+            <h3>Diseño Web</h3>
+            <span>Diseño de la Landing pages del Máster en Value investing responsive. </span>
+          </a>
+        </figure>
+      </li>
+        
+      <li>
+        <figure>
+          <div>
+            <img class="grafico" src="images/carteles/jazz.jpg" alt="cartel festival de Jazz">
+          </div>
+          <a class="figcaption" href="carteles.html">
+            <h3> Carteles </h3>
+            <span>Diseño de cartel para festival de Jazz. </span>
+          </a>
+        </figure>
+      </li>
 
-	            <li>
-					<figure>
-						<div><img src="images/alom_2.jpg" alt="contact image"></div>
-						<figcaption>
-							<h3>Poyecto 4</h3>
-							<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-							<a href="aula_mentor.html" class="btn_hover">Ver</a>
-						</figcaption>
-					</figure>
-				</li>
-
-				<li>
-					<figure>
-						<div><img src="images/alom_2.jpg" alt="music image"></div>
-						<figcaption>
-							<h3>Poyecto 5</h3>
-							<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-							<a href="simo.html" class="btn_hover">Ver</a>
-						</figcaption>
-					</figure>
-				</li>
-				<li>
-					<figure>
-						<div><img src="images/alom_2.jpg" alt="portfolio images"></div>
-						<figcaption>
-							<h3>Poyecto 6</h3>
-							<span>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </span>
-							<a href="" class="btn_hover">Ver</a>
-						</figcaption>
-					</figure>
-				</li>
-
-			</ul>
+    </ul>
 
 </div>
 
@@ -154,14 +221,14 @@
 <div id="footer">
 
       <div class="copy">
-        <p>Página web diseñada y maquetada por<br>© Natalia Guaita 2016</p>
+        <p>Página web diseñada y maquetada por<br>© Natalia Guaita 2017</p>
       </div>
 
       <div class="redes">
 
         <ul class="social">
           <li class="fa fa-linkedin fa-2x" aria-hidden="true" alt="icono Linkedin"><a href="#" title="linkedin" target="_blank"></a></li>
-          <li class="fa fa-behance fa-2x" aria-hidden="true" alt="icono Behance"><a href="#" title="Behance" target="_blank"></a></li>
+          <!--<li class="fa fa-behance fa-2x" aria-hidden="true" alt="icono Behance"><a href="#" title="Behance" target="_blank"></a></li> -->
           <li class="fa fa-instagram fa-2x" aria-hidden="true" alt="instagram"><a href="#" title="instagram" target="_blank"></a></li>
         </ul>
 
