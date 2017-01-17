@@ -125,6 +125,10 @@ a.anchor {
     #header {
         height: 50px;
     }
+           
+    a.anchor {
+       top: -100px;
+    }
     
     .icon {
       display: inline;
@@ -264,56 +268,51 @@ h2 {
 @media screen and (max-width: 1500px) {
 
     .contenedor li {
-    width: 300px;
+       width: 300px;
     }
 }
 
 @media screen and (max-width: 1000px) {
 
     .contenedor li {
-    width: 280px;
+      width: 280px;
     }
 }
 
 @media screen and (max-width: 900px) {
 
     .contenedor li {
-    width: 250px;
+        width: 250px;
     }
     
     .contenedor .figcaption {
-    padding: 32px 0px;
-    height: 65%;
+        padding: 32px 0px;
+        height: 65%;
     }
 }
 
 @media screen and (max-width: 700px) {
 
     #works {
-    width: 75%;
-    margin: 100px auto;
-    text-align: center;
+        width: 75%;
+        margin: 100px auto;
+        text-align: center;
     /* border: 1px solid rgba(0, 0, 0, 0.1); */
     }
 
     ul.contenedor {
-    width: 100%;
+        width: 100%;
     }
 
     .contenedor li {
-    width: 90%;
-    margin: 10px;
+        width: 90%;
+        margin: 10px;
     }
     
     .contenedor li.mobile {
        display: none;
     }
     
-    .contenedor figure:hover .figcaption {
-    display: none;
-    }
-
-
     .buttom {
         padding: 10px;
         border: 2px solid #44E8E8;
@@ -322,11 +321,11 @@ h2 {
     }
 
     .underline {
-      padding: 0;
+        padding: 0;
     }
     
     .underline:before {
-      position: inherit;
+        position: inherit;
     }
 
 }
