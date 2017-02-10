@@ -101,5 +101,25 @@
         
 
 </body>
+      <script type="text/javascript">
+
+    function mostrarmenu() {
+      var style = document.getElementById("nav").style;
+      if( style.display === "none" || style.display === "") {
+        style.display = "block";
+      }
+      else {
+        style.display = "none";
+      }
+
+    }
+
+    document.body.onload = function() {
+      document.getElementById("nav").onclick = function() {
+        mostrarmenu();
+      }
+    }
+
+  </script>
 
 </html>
